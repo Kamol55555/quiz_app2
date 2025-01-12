@@ -1,0 +1,510 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    background-color: rgb(34, 39, 39);
+    padding-top: 15px;
+    height: 600px;
+    position: relative;
+}
+
+.Main_Box {
+    width: 95%;
+    margin: 0 auto;
+    position: relative;
+
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.L_Page_Box {
+    min-height: 350px;
+    width: 600px;
+    border: 1px darkcyan solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding: 15px;
+}
+
+.L_Page_Box h1 {
+    margin: 0 auto;
+    color: azure;
+}
+
+.L_Page_Box label {
+    font-size: x-large;
+    color: rgb(89, 206, 108);
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.L_Page_Box input {
+    width: 100%;
+    height: 55px;
+    padding-left: 15px;
+    font-size: larger;
+}
+
+.L_Page_Box button {
+    width: 100%;
+    margin-top: 25px;
+    height: 55px;
+    font-size: 30px;
+    font-weight: 900;
+    background-color: dodgerblue;
+    outline: none;
+    border: none;
+}
+
+.L_Page_Box button:active {
+    background-color: azure;
+}
+
+.log_reg_question {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 15px;
+    ;
+}
+
+.log_reg_question :nth-child(2) {
+    text-decoration: underline;
+    color: rgb(0, 123, 255);
+    cursor: pointer;
+    padding-right: 15;
+    margin-right: 50px;
+}
+
+.message {
+    color: deeppink;
+    font-size: 35px;
+    font-weight: 900;
+}
+
+.Secsess_messaage {
+    position: absolute;
+    height: 100px;
+    width: 300px;
+    background-color: white;
+    top: 50%;
+    transform: translateY(100%);
+    right: 2%;
+    padding: 10px;
+
+}
+
+.Secsess_messaage table,
+td {
+    border: 1px rebeccapurple solid;
+    border-collapse: collapse;
+    width: 100%;
+    padding: 15px;
+    font-size: 12px;
+}
+
+.Secsess_messaage p {
+    font-size: 12px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 10px;
+    text-align: center;
+
+}
+
+.L_message {
+    height: 70px;
+    border: 1px red solid;
+    width: 100%;
+    margin-top: 15px;
+    text-align: center;
+    padding: 10px;
+    background-color: plum;
+
+
+}
+
+.L_message p {
+    font-size: 30px;
+    color: white;
+
+
+}
+
+.navbar {
+    height: 60px;
+    border: 1px white solid;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .LOGO {
+    margin-left: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color:white;
+    height: 50px;
+    width: 50px;
+    font-size: 25px;
+    font-weight: 800;
+    color: rgb(35, 224, 187);
+}
+
+.navbar div:nth-child(2) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    width: 300px;
+}
+
+
+.navbar div:nth-child(2) button{
+    width: 80px;
+    height: 35px;
+    border: none;
+    outline: none;
+    background-color:#e91e63 ;
+    color: white;
+    font-size: 15px;
+    font-weight: 800;
+   
+}
+
+.navbar div:nth-child(2) button:active{
+    background: darkblue;
+}
+
+
+.userName_r{
+
+    color: white;
+}
+
+
+.coverBox{
+   min-height: 600px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.gameBox{
+  width: 400px;
+  min-height: 350px;
+  background-color: white;
+  border-radius: 8px;
+
+
+}
+
+.gameBox h3{
+ border-bottom: 1px rgb(28, 23, 23, 0.2) solid;  
+ padding: 10px 15px; 
+ 
+  
+}
+.gameContent{
+    padding: 25px;
+}
+.letters{
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+    flex-direction: row;
+    align-items: center;
+    
+    
+
+}
+.letters p{
+    width: 40px;
+    text-align: center;
+    color: rgb(35, 224, 187);
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    height: 40px;
+    padding: 10px;
+    font-weight: 800;
+    border: 1px rgb(28, 23, 23, 0.2) solid;  
+    
+    
+}
+
+.InterLeter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 75px;
+}
+.InterLeter p{
+    margin: 15px;
+    font-size: larger;
+    font-weight: bolder;
+    color:rgb(33, 173, 145); 
+}
+.InterLeter input{
+    text-align: center;
+    width: 55px;
+    height: 40px;
+    outline: none;
+    border: none;
+    border: 1px rgb(33, 173, 145) solid ;
+
+}
+.InterLeter input:focus{
+    border-color: blue;
+}
+
+
+.question{
+    margin-top: 50px;
+}
+.question span{
+    font-size: larger;
+    font-weight: bold;
+    color: #e91e63;
+}
+.wrongLetters span{
+    color:rgb(35, 224, 187); 
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.gameContent button{
+    padding: 10px 25px;
+    margin-top: 30px;
+    width: 100%;
+    border: none;
+    background:rgb(35, 224, 187); 
+    border-radius: 8px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+    font-weight: bold;
+    color: white;
+}
+
+.gameContent button:hover{
+ 
+    background:rgb(44, 205, 172); 
+    cursor: pointer;
+    
+}
+
+
+
+
+
+
+
+
+
+
+.heddin {
+    display: none;
+}
+.calendar_day{
+    position: absolute;
+    right: 0;
+    top: 10%;
+    height: 130px;
+    width: 80px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.icon_box i{
+    color: rgb(44, 205, 172); 
+    font-size: larger;
+    margin-bottom: 5px;
+}
+.day_box{
+    width: 90%;
+    height:75%;
+    display: flex;
+    flex-direction: column;
+    transition: all 1s ease;
+}
+.c_heder{
+    height: 30%;
+    width: 100%;
+    background-color:rgb(44, 205, 172); 
+    border-radius: 6px 6px 0 0 ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.c_heder p{
+    color: white;
+    font-weight: 800;
+    font-size: 12px;
+    
+}
+.c_body{
+    height: 70%;
+    width: 100%; 
+    background-color: white;
+    border-radius: 0px 0px 6px 6px ;
+    display: flex;
+    flex-direction: column;
+}
+.full_calendar{
+    position: absolute;
+    width: 300px;
+    top: 30%;
+    right: 0;
+    display: flex;
+    justify-content: center;
+}
+.calendar_body{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background-color: white;
+ padding: 15px 0;
+ border-radius: 10px;
+ height: 310px;
+ overflow: hidden;
+ 
+
+}
+.cal_body_box{
+ display: grid;
+ grid-template-columns: repeat(7,20px);
+ grid-template-rows: repeat(5,20px);
+ gap: 10px;
+ padding: 0 15px;
+ overflow: hidden;
+} 
+.cal_body_box .ch{
+    border: 1px rgb(44, 205, 172) solid;
+    height: 25px;
+    width: 25px;
+    text-align: center;
+   }
+.cal_body_box .ne_ac{
+    border: 1px rgba(44, 205, 172,0.1) solid;
+    height: 25px;
+    width: 25px;
+    text-align: center;
+    color: lightgray;
+   }
+
+.cal_body_box .activ_day{
+    border: 1px rgba(201, 26, 143, 1) solid;;
+    color: rgb(229, 25, 25);
+   }
+.week_d{
+    padding: 0 15px;
+    display: grid;
+    grid-template-columns: repeat(7,20px);
+    gap: 10px;
+    padding-bottom: 7px;
+}
+.week_d p{
+    width: 25px;
+    margin-right: 2px;
+    text-align: center;
+    color: rgb(44, 205, 172);
+}
+.week_d p:nth-child(6),.week_d p:nth-child(7){
+    color: rgb(218, 23, 49);
+}
+.week{
+    border: none;
+    font-size: 10px;
+    text-align: start;
+    height: 10px;
+    width: 25px;
+}
+.cal_body_box  .n{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(10, 103, 103);
+    border: none;
+}
+.year_lebel{
+    border-bottom: 1px rgba(104, 98, 98,0.3) solid;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 7px;
+    display: flex;
+    padding: 0 20px;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.year_lebel i{
+ color: dodgerblue;
+ height: 30px;
+ width: 30px;
+ background-color: rgb(176, 210, 230);
+ margin-left: 15px;
+ border-radius: 50%;
+ padding: 5px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ font-size: large;
+}
+
+.year_lebel i:hover{
+    background-color:rgb(29, 118, 169); 
+    cursor: pointer;
+    color: white;
+   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.heddin {
+    display: none;
+    transition: all 1s ease;
+}

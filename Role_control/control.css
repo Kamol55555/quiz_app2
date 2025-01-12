@@ -1,0 +1,279 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+  position: relative;
+}
+
+.main {
+    padding: 10px;
+    height: 100vh;
+    max-height: 100vh;
+    position: relative;
+    background-color: dodgerblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px 15px;
+}
+
+.main .nav_bar {
+    height: 55px;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.main .nav_bar button {
+    margin-right: 25px;
+    height: 35px;
+    padding: 5px 15px;
+    outline: none;
+    border: none;
+    background-color: darkcyan;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 15px;
+}
+
+.main .nav_bar button:hover {
+    cursor: pointer;
+    background-color: rgb(4, 71, 71);
+
+}
+
+
+
+.main .main_box {
+    margin-top: 10%;
+    height: 66%;
+    width: 55%;
+    background-color: white;
+    border-radius: 15px;
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    
+
+
+}
+
+
+
+.main_box .search_box{
+    position: relative;
+    display: flex;
+    height: 90px;
+    width: 100%;
+    border: 1px rgba(0, 0, 0, 0.5) solid;
+
+    
+  
+  
+  }
+
+  .main_box .search_box label{
+    height: 15px;
+    width: 135px;
+    background-color: white;
+    transform: translateY(-10px);
+    margin-left: 25px;
+    margin-right: 25px;
+    padding-left: 5px;
+
+
+  }
+  .main_box button,input{
+     height: 35px;
+     margin-top: 7px;
+     padding: 0 15px;
+     
+
+
+  }
+  .main_box input{
+    width: 300px;
+    margin-left: 60 px;
+    margin-right: 5px;
+    font-size: 18px;
+    outline: none;
+
+
+ }
+ .main_box input:focus{
+   border: 1px rgb(116, 78, 228) solid;
+ }
+
+ .main_box button{
+    background-color:dodgerblue;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 5px;
+ }
+
+ .main_box button:active{
+    background-color:rgb(13, 65, 117);
+ }
+ .main .bodyofthebox{
+  overflow-y: scroll;
+  max-height: 80%;
+  padding: 10px 5px;
+ }
+
+
+
+
+ .main .bodyofthebox li:first-child{
+   border-bottom: 1px rgba(0, 0, 0, 0.5) solid;
+   margin-bottom: 15px;
+   font-size: 15px;
+   font-weight: 900;
+   color: deeppink;
+   padding-bottom: 10px;
+   transition: all 1s ease;
+
+ }
+
+ 
+
+
+
+
+.main .bodyofthebox li div{
+    flex: 1;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+
+ }
+ .main .bodyofthebox .main_li div{
+   margin: 0 60px;
+
+ }
+
+ .main .bodyofthebox li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    height: 30px;
+ }
+ .main .bodyofthebox li:hover{
+  border-bottom: 1px rgba(0, 0, 0, 0.5) solid;
+   cursor: pointer;
+   transition: all 0.5s ease;
+  
+ }
+ .main .bodyofthebox li:first-child:hover{
+  background-color: white;
+ 
+  }
+
+ .main .bodyofthebox li p{
+    width: 35%;
+ }
+ .main .bodyofthebox li p:nth-child(1){
+    width: 5%;
+ }
+ 
+ .main .bodyofthebox li p:nth-child(3){
+  width: 25%;
+}
+.new_user{
+  color: dodgerblue;
+}
+
+.role_box{
+ position: absolute;
+ height: 100%;
+ width: 100%;
+ background-color: rgba(0, 0, 0, 0.5);
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%,-50%);
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ transition: all 1s ease;
+ 
+}
+
+.role_box .role_box_main{
+  height: 180px;
+  width: 300px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+  border-radius: 8px;
+ 
+}
+.role_box .role_box_main p{
+  width: 100%;
+  color: dodgerblue;
+  font-size: 18px;
+  padding: 10px;
+  border-bottom: 1px rgba(0, 0, 0, 0.5) solid;
+  text-align: center;
+}
+.role_box .role_box_main .roles{
+  width: 95%;
+  color: dodgerblue;
+  margin-top: 15px;
+  outline: none;
+  height: 35px;
+}
+
+.role_box .role_box_main option{
+  margin-bottom: 5px;
+}
+
+
+
+
+.role_box .role_box_main .confirm_btns{
+  flex: 1;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  width: 95%;
+  color: dodgerblue;
+  margin-top: 15px;
+  outline: none;
+  height: 35px;
+  padding: 10px 35px;
+}
+.role_box .role_box_main .confirm_btns button{
+  width: 70px;
+  height: 35px;
+  outline: none;
+  background-color: mediumturquoise;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+
+}
+.role_box .role_box_main .confirm_btns button:nth-child(2){
+  background-color: crimson;
+
+}
+
+.hidden{
+  display: none;
+
+}
+

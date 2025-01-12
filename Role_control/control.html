@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../fontawesome-free-6.7.2-web/css/all.min.css">
+    <link rel="stylesheet" href="./control.css">
+    <title>Control Panel</title>
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="nav_bar">
+            <div>
+                <button id="btn_dashbord">DASHBORD</button>
+            </div>
+        </div>
+        <div class="main_box">
+            <div class="search_box">
+                <label for="search">FAIND THE USER
+
+                </label>
+                <input type="search" name="search" id="search">
+                <button>SEARCH</button>
+
+            </div>
+            <div class="bodyofthebox">
+                <ul class="users_data">
+                    <li>
+                        <p>№</p>
+                        <p>F.I.SH</p>
+                        <p>USER ROLE</p>
+                        <div>
+                            SETTINGS
+                        </div>
+                    </li>
+                    <!-- <li class="main_li">
+                        <p>1</p>
+                        <p>DAVRONOV KAMOL</p>
+                        <div>
+                            <i class="fa-solid fa-edit" id="edit"></i>
+                            <i class="fa-solid fa-eye" id="show"></i>
+                            <i class="fa-regular fa-trash-alt" id="delite"></i>
+                        </div>
+                    </li>
+                    <li class="main_li">
+                        <p>1</p>
+                        <p>DAVRONOV KAMOL</p>
+                        <div>
+                            <i class="fa-solid fa-edit" id="edit"></i>
+                            <i class="fa-solid fa-eye" id="show"></i>
+                            <i class="fa-regular fa-trash-alt" id="delite"></i>
+                        </div>
+                    </li> -->
+                </ul>
+
+            </div>
+            <div class="footer">
+                 <button class="save_btn">SAVE THE DATA</button>
+
+            </div>
+
+        </div>
+        <!-- ROLE ENTIR BOX -->
+        <div class="role_box hidden " > 
+           <div class="role_box_main">
+            <p>DAVRONOV KAMOL</p>
+            <select class="roles" >
+                <option value="USER">USER</option>
+                <option value="ADMIN">ADMIN</option>
+                <option value="VIWER">WIVER</option>
+            </select>
+            <div class="confirm_btns">
+                <button>OK</button>
+                <button>NET</button>
+            </div>
+
+           </div> 
+           
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="./control.js"></script>
+</body>
+
+</html>

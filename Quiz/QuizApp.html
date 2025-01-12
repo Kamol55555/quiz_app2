@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../fontawesome-free-6.7.2-web/css/all.min.css">
+    <link rel="stylesheet" href="./QuizApp.css">
+    <title>Quiz App</title>
+</head>
+
+<body>
+
+    <div class="cintainer">
+        <div class="nav_bar">
+            <button class="logOut">LOG OUT</button>
+            <div class="sms_box">
+                <i class="fa-solid fa-message"></i>
+                <span class="sms_count">0</span>
+            </div>
+            <div class="user_name">
+                <p>USER NAME</p>
+                <p class="user_name_p">Davronov Kamol</p>
+            </div>
+            
+        </div>
+        <div class="sms_body">
+            <ul>
+                <li>
+                    <p> <span>SENDER:</span>Davronov Kamol</p>
+                    <p> <span>DATE:</span>12/12/2022</p>
+                    <p> <span>TIME:</span>12:12</p>
+                    <p id="message"> <span>MESSAGE:</span> hghgghghghghghghghghghghghghghddsdsdssssssssssssssssssssssss</p>
+                </li>
+                <li>
+                    <p> <span>SENDER:</span>Davronov Kamol</p>
+                    <p> <span>DATE:</span>12/12/2022</p>
+                    <p> <span>TIME:</span>12:12</p>
+                    <p id="message"> <span>MESSAGE:</span> hghgghghghghghghghghghghghghghddsdsdssssssssssssssssssssssss</p>
+                </li>
+            </ul>
+            
+        </div>
+        
+        <div class="startBox  "> <!--- QUIZ START PAGE--->
+            <h1>WELLCOME MY QUIZ APP</h1>
+            <button class="start_btn">
+                START
+            </button>
+
+        </div>
+        <div class="GameBox hidden"> <!--- QUIZ GAME PAGE--->
+            <div class="heder">
+                <h3 class="q_wiew">2/10</h3>
+                <p class="time_sign"> <i class="fa-solid fa-clock"></i><span>0</span>s</p>
+            </div>
+            <div class="gameBody">
+                <!-- <h3>Uzbekiston poytaxti qayer?</h3>
+                 <ul>
+                    <li class="quiz_answer">O'zbekiston</li>
+                    <li class="quiz_answer">Toshkent</li>
+                    <li class="quiz_answer">Misr</li>
+                    <li class="quiz_answer">Samarqand</li>
+                 </ul>
+                 <div> <Button class="next_btn_b" id="next_btn">NEXT</Button></div> -->
+            </div>
+            <div class="nexBtnBox"> <Button class="next_btn_b" id="next_btn">NEXT</Button></div>
+        </div>
+        <div class="GameResaltBox hidden"> <!--- QUIZ GAME  RESALT PAGE--->
+
+            <h1>SIZ <span>25</span>ta to'g'ri javob topdingiz</h1>
+            <button class="rsetBTN">Restart</button>
+        </div>
+
+
+    </div>
+    <script src="./Quisis/Questions.js"></script>
+    <script src="./QuizApp.js"></script>
+</body>
+
+</html>

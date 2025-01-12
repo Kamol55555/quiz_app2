@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="../fontawesome-free-6.7.2-web/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./Admin.css" />
+    <title>Admin Panel</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="main">
+        <div class="admin_nav">
+          <!-- Navbar -->
+          <div class="logo">
+            <i class="fa-solid fa-star"></i>
+            <p>ADMIN PANEL</p>
+          </div>
+        </div>
+        <div class="control_panel" id="controlPanel">
+          <!-- Control_panel -->
+          <p class="menu">MENU</p>
+          <div class="control_items">
+            <ul>
+              <li class="items" id="send_sms">
+                <i class="fa-solid fa-message" ></i>SEND SMS USERS
+              </li>
+              <li class="items" id="Quiz_add">
+                <i class="fa-solid fa-atlas"></i>ADD QUESTION
+              </li>
+              <li class="items" id="control_role">
+                <i class="fa-solid fa-user-lock"></i>ROLE CONTROL
+              </li>
+              <li class="items">
+                <i class="fa-solid fa-chart-bar"></i>Statistics
+              </li>
+            </ul>
+          </div>
+          <div class="footer_control_items">
+            <li class="items"><i class="fa-solid fa-stream"></i>Settings</li>
+            <li class="items" id="logOutBtn">
+              <i class="fa-solid fa-sign-out-alt"></i>LOG OUT
+            </li>
+          </div>
+        </div>
+        <div class="users_page">
+          <!-- USERS PAGE -->
+          <div class="box1">
+            <div class="sub_box1">
+              <h1>All USERS</h1>
+              <p id="all_user_num">35</p>
+            </div>
+            <div class="sub_box2">
+              <h1>NEW USERS</h1>
+              <p id="newUsernum">35</p>
+            </div>
+            <div class="sub_box3">
+              <h1>All USERS</h1>
+              <p>35</p>
+            </div>
+          </div>
+          <div class="box2">
+            <div class="b2_sub_box1" style="padding: 15px">
+              <div style="margin-top: 15px">
+                <input id="table_search_inpt" /><button id="search_table_btn">
+                  SEARCH
+                </button>
+              </div>
+              <table id="users_info_table">
+                <tr>
+                  <th class="thead1">№</th>
+                  <th class="thead2">FULL NAME</th>
+                  <th class="thead3">ROLE</th>
+                  <th class="thead4">STATUS</th>
+                </tr>
+              </table>
+            </div>
+            <div class="b2_sub_box2">
+              <table class="test_res">
+                <tr
+                  style="
+                    background-color: black;
+                    color: white;
+                    height: 35px;
+                    font-size: 15px;
+                    font-weight: bold;
+                  "
+                >
+                  <th>Name</th>
+                  <th>TEST RESALT</th>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sms_box hidden ">
+        <div class="sms_body">
+          <div style="display: flex; align-items: center">
+            <h3 >USER NAME:</h3>
+            <p id="resewer">DAVRONOV KAMOL</p>
+            <div
+              class="clouse_icon"
+              style="
+                flex: 1;
+                display: flex;
+                align-items: center;
+                justify-content: end;
+                margin-right: 10px;
+                
+              "
+                
+            >
+              <i  id="clouse_icon"   class="fa-solid fa-xmark" style="font-size: 35px; cursor: pointer; color: rgb(226, 43, 43);"></i>
+            </div>
+          </div>
+          <div
+            style="
+              display: flex;
+              align-items: center;
+              margin-top: 25px;
+              height: 55px;
+            "
+          >
+            <h3>MESSAGE:</h3>
+            <input
+              type="text"
+              name=""
+              id="sms_text"
+              style="
+                height: 45px;
+                width: 100%;
+                padding: 0 15px;
+                border: 1px rgb(123, 0, 255) solid;
+                font-size: 20px;
+              "
+            />
+          </div>
+          <button
+            style="
+              margin-top: 25px;
+              height: 35px;
+              width: 70%;
+              margin-left: 100px;
+              border: none;
+              background-color: cornflowerblue;
+            "
+            id="send_sms_btn"
+          >
+            SEND
+          </button>
+        </div>
+
+        <div class="users_list">
+          <h3>SELECT THE USER</h3>
+          <div class="search_user_sms">
+            <input type="text" id="search_user_input" />
+            <button>search</button>
+          </div>
+          <ul class="users_list_ul">
+            <li class="users_list_li " >5555</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="./admin.js"></script>
+  </body>
+</html>
+
+<!--  -->
