@@ -4,7 +4,7 @@
     box-sizing: border-box;
     font-family: 'Times New Roman', Times, serif;
     font-size: 18px;
-}
+    background-attachment: fixed;}
 
 .main{
     position: relative;
